@@ -1,7 +1,9 @@
 <?php
+    include("includes/config.php");
     include("includes/classes/Account.php");
     include("includes/classes/Constants.php");
-    $account = new Account();
+    
+    $account = new Account($con);
 
     include("includes/handlers/register-handler.php");
     include("includes/handlers/login-handler.php");
@@ -27,7 +29,7 @@
             </p>
             <p>
                 <label for="loginPassword">Password</label>
-                <input id="loginPassword" name="loginPassword" type="password" required>
+                <input id="loginPassword" name="loginPassword" type="password" placeholder="your password" required>
             </p>
 
             <button typo="submit" name="loginButton">LOG IN</button>
