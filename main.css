@@ -1,5 +1,5 @@
 :root {
-    --background: rgba(85, 214, 170, .85);
+    --background: rgba(85, 214, 170, 1);
 }
 
 *, *::before, *::after {
@@ -16,13 +16,9 @@ body{
     font-family: sans-serif;
     font-weight: 400;
 }
-.content {
-    display: grid;
-}
 
 
 /* navigation styles */
-
 header {
     background: var(--background);
     text-align: center;
@@ -156,3 +152,8 @@ nav a:hover {
         height: 5px;
     }
 }
+
+main{
+    padding-top: 80px;
+}
+
