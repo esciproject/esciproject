@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 2%;
+    grid-row-gap: 5%;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 3% 5%;
+ }
+
+ .grid_page {
+    background: rgba(50, 115, 220, 0.671);
+    color: #fff;
+    padding: 0px 0px;
+    font-size: 21px;
+    border-radius: 5px;
+    overflow: hidden;
+ }
+
+ .thumb {
+    display: block;
+    height: auto !important;
+    width: 100% !important;
+}
+
+.info{
+    padding: 1px 10px;
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 700px) {
+	.grid_page { width: 100%; }
+}
